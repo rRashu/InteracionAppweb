@@ -1,0 +1,163 @@
+.Principal{
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background: rgba(72, 84, 198, 0.81);
+}
+.texto{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    color: #FFF;
+    font-family: Georama, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #9f9fee none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#fff;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #c221e3;
+    overflow: hidden;
+    border-radius: .25em;
+}
+/*
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #afd382;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+}
+
+.select:hover::after {
+    color: #e9fc05;
+}*/
+
+
+body {
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    height: 100vh;
+    margin: 0;
+}
+
+.neon-list {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.neon-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.neon-list li {
+    font-size: 24px;
+    margin: 4px;
+    display: inline-block;
+    position: relative;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.neon-list li span {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.neon-list li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+/*
+.neon-list li:hover:before {
+    opacity: 1;
+}*/
+
+
+body {
+    background-color: black;
+}
+
+.glow {
+    font-size: 60px;
+    color: green;
+    text-align: center;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Text glowing from onw shade to other shade */
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgb(43, 255, 0),
+        0 0 20px rgb(43, 255, 0),
+        0 0 30px #26e600,
+        0 0 40px #26e600,
+        0 0 50px #26e600,
+        0 0 60px #26e600,
+        0 0 70px #26e600;
+    }
+    to {
+        text-shadow: 0 0 20px #4dff7a;
+        0 0 30px #4dff7a,
+        0 0 40px #4dff7a,
+        0 0 50px #4dff7a,
+        0 0 60px #4dff7a,
+        0 0 70px #4dff7a,
+        0 0 80px #4dff7a;
+    }
+}
+
+img {
+    cursor: pointer;
+  }
+  
+img:hover {
+    background-size: 120% 120%;
+  }

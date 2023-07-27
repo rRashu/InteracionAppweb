@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor</title>
+    <link href="css/Style.css" rel="stylesheet">
+    <link href="css/Imagenes.css" rel="stylesheet">
+    <link href="css/fondo.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+<h1 class="glow" id="glow" style="display: none">Autores</h1>
+<div class="Principal">
+    <div class="contenedorprincipal" id="contenedor">
+        <div class="texto">Conversor De unidades</div>
+        <img alt="" class="autor" id="autor" onclick="autor()" src="Imagenes/autor.png">
+        <img alt="" class="moneda" onclick="moneda()" src="Imagenes/Moneda-color.png">
+        <img alt="" class="masa" onclick="masa()" src="Imagenes/Masa-color.png">
+    </div>
+</div>
+
+<!-- > Parte de masa </-->
+
+<div class="Principal" id="option_masa" style="display: none">
+    <div class="texto">Conversor De Masa</div>
+    <img alt="" class="volver" id="volver" onclick="volver()" src="Imagenes/volver-color.png">
+    <div>
+        <label for="masa_1"></label><select class="masa_1" id="masa_1">
+        <option value="35.27396">Kilogramo</option>
+        <option value="16">Libra</option>
+        <option value="1">Onza</option>
+    </select>
+        <label for="masa_2"></label><select class="masa_2" id="masa_2">
+        <option value="35.27396">Kilogramo</option>
+        <option value="16">Libra</option>
+        <option value="1">Onza</option>
+    </select>
+        <label for="input1"></label><input class="texto_1" id="input1" oninput="validarNumero(this)" placeholder="Ingrese... "
+                                           type="text">
+        <label for="input2"></label><input class="texto_2" id="input2" oninput="validarNumero(this)" placeholder="Ingrese..."
+                                           type="text">
+    </div>
+</div>
+
+<!-- > Parte de moneda </-->
+
+<div class="Principal" id="option_moneda" style="display: none">
+    <div class="texto">Conversor De Moneda</div>
+    <img alt="" class="volver" id="volver" onclick="volver()" src="Imagenes/volver-color.png">
+    <div>
+        <label for="moneda_1"></label><select class="masa_1" id="moneda_1">
+        <option value="1">Dolar</option>
+        <option value="0.94">Euro</option>
+        <option value="0.83">Libra Esterlina</option>
+    </select>
+        <label for="moneda_2"></label><select class="masa_2" id="moneda_2">
+        <option value="1">Dolar</option>
+        <option value="0.94">Euro</option>
+        <option value="0.83">Libra Esterlina</option>
+    </select>
+        <label for="input1mo"></label><input class="texto_1" id="input1mo" oninput="validarNumeromoneda(this)" placeholder="Ingrese... "
+                                             type="text">
+        <label for="input2mo"></label><input class="texto_2" id="input2mo" oninput="validarNumeromoneda(this)" placeholder="Ingrese..."
+                                             type="text">
+    </div>
+</div>
+
+<!-- > Parte de Autor </-->
+<div class="Principal" id="autorcontenedor" style="display: none">
+
+    <img alt="" class="volver" id="volver" onclick="volver()" src="Imagenes/volver-color.png">
+    <div class="neon-list">
+        <ul>
+            <li>Alarcon Barragan Jisela</li>
+            <li>Garcia Vinces Steven</li>
+            <li>Rezabala Montes Robinson</li>
+            <li>Tenesaca Guaman Edin</li>
+            <li>Barre Briones Joshelyn</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
